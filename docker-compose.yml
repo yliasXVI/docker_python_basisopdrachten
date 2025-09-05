@@ -1,0 +1,54 @@
+version: "3.9"
+
+services:
+  # Python container
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: python_app
+    volumes:
+      - ./app:/app
+    working_dir: /app
+    command: tail -f /dev/null
+    networks:
+      - myNetwork
+
+  # MariaDB server
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: a3b6c9
+      MYSQL_DATABASE: testdb
+      MYSQL_USER: testuser
+      MYSQL_PASSWORD: testpass
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - myNetwork
+
+  # phpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: mariadb
+      PMA_USER: root
+      PMA_PASSWORD: a3b6c9
+    ports:
+      - "8080:80"
+    networks:
+      - myNetwork
+    depends_on:
+      - mariadb
+
+networks:
+  myNetwork:
+
+volumes:
+  mariadb_data:
