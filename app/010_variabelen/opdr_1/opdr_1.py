@@ -1,6 +1,6 @@
 # Opdracht 1
-# Naam student:
-# Groep:
+# Naam student: Ylias Kok
+# Groep: 4ITX
 
 # Hier komt je code...
 
