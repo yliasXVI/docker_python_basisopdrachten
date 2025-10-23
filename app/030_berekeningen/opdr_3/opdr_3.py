@@ -1,16 +1,45 @@
 # Opdracht 3 tekstfuncties
-# Naam student:
-# Groep:
+# Naam student: Ylias Kok
+# Groep: 4ITX
 
-# Hier komt je code...
+
+# Antwoorden met eigen corecte Formule namelijk +1.
 x = 1
-y = ...
-print( ... )
+a = ((4) * x**3)
+b = ((-2) * x**2)
+y = ((a + b) +1)
+print(y)
 
 x = 2
-y = ...
-print( ... )
+a = ((4) * x**3)
+b = ((-2) * x**2)
+y = ((a + b) +1)
+print(y)
 
 x = 0
-y = ...
-print( ... )
+a = ((4) * x**3)
+b = ((-2) * x**2)
+y = ((a + b) +1)
+print(y)
+
+
+# Antwoorden met formule in de opdracht die klopt niet -1 zou +1 moeten zijn om op de antwoorden te komen die de opdracht geeft.
+x = 1
+a = ((4) * x**3)
+b = ((-2) * x**2)
+y = ((a + b) -1)
+print(y)
+
+x = 2
+a = ((4) * x**3)
+b = ((-2) * x**2)
+y = ((a + b) -1)
+print(y)
+
+x = 0
+a = ((4) * x**3)
+b = ((-2) * x**2)
+y = ((a + b) -1)
+print(y)
+
+
