@@ -1,5 +1,5 @@
 # Opdracht 2 berekeningen
-# Naam student: Ylias Kok
+ # Naam student: Ylias Kok
 # Groep: 4ITX
 
 c = -12
