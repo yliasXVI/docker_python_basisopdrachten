@@ -25,6 +25,8 @@ f = 96
 > 62.2 graden Celsius is gelijk aan 144 graden Fahrenheit  
 > 96 graden Fahrenheit is gelijk aan 35.6 graden Celcius
 
+f = c x 1,8 + 32
+c = f - 32 / 1,8
 
 
 
