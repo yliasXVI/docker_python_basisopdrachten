@@ -4,12 +4,11 @@
 
 
 rivier_info = {
-    "rijn": ["nederland", "duitsland", "Frankrijk"],
-    "maas": ["nederland", "belgië", "duitsland"],
-    "nijl": ["egypte", "soedan", "oeganda"]
+    "rijn": ["Nederland", "Duitsland", "Frankrijk"],
+    "maas": ["Nederland", "België", "Duitsland"],
+    "nijl": ["Egypte", "Soedan", "Oeganda"]
 }
 
-rivieren = list(rivier_info.keys())
-# rivieren is nu een list met alleen de riviernamen: ['rijn', 'maas', 'nijl']
-
-# Hier jouw code.....
+print(f'De rivier Rijn', 'stroomt onder andere door', rivier_info["rijn"][1])
+print(f'De rivier Maas', 'stroomt onder andere door', rivier_info["maas"][0])
+print(f'De rivier Nijl', 'stroomt onder andere door', rivier_info["nijl"][2])
