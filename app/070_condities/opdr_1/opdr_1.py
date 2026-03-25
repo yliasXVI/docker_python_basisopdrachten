@@ -6,7 +6,10 @@
 
 # Hier start de for-loop....
 
-my_list = []
-
+numbers_list = []
 #for loop
+for numbers in range(1, 11):
 #if statement
+ if numbers > 4:
+  numbers_list.append(numbers)
+print(numbers_list)
