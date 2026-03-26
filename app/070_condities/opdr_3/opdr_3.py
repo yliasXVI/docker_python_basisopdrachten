@@ -10,3 +10,12 @@ kortings_percentages = {"baby": 100, "kinderen": 50, "volwassenen": 0, "ouderen"
 leeftijd = {"baby": (0, 2), "kinderen": (3, 18), "volwassenen": (19, 64), "ouderen": (65, 150)}
 
 # Hier komt je code...
+leeftijd_input = int (input("Geef uw leeftijd in aantal jaar \n"))
+for categorie, (min_leeftijd, max_leeftijd) in leeftijd.items():
+    if min_leeftijd <= leeftijd_input <= max_leeftijd:
+       percentage = kortings_percentages[categorie]
+       korting = normale_toegangsprijs * (percentage / 100)
+       prijs = normale_toegangsprijs - korting
+       print(f'U behoort tot de groep {categorie}')
+       print(f'U krijgt {percentage}% korting')
+       print(f'U betaalt daarom {prijs}')
